@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-BugFinderApplication<bug-finder>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.garde.bug_finder.BugFinderApplication",
+            "projectName": "bug-finder",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
