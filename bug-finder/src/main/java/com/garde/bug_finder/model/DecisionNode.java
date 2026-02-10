@@ -7,25 +7,39 @@ public class DecisionNode {
     private String id;
     private String question;
     private List<Option> options;
+
+    private String bugId;
     private BugInfo bug;
 
-    public DecisionNode(){
+    public DecisionNode()
+    {}
 
-    }
-
-    public String getId() {
+    public String getId() 
+    {
         return id;
     }
 
-    public String getQuestion() {
+    public String getQuestion() 
+    {
         return question;
     }
 
-    public List<Option> getOptions() {
+    public List<Option> getOptions() 
+    {
         return options;
     }
 
-    public BugInfo getBug() {
+    public BugInfo getBug() 
+    {
         return bug;
+    }
+
+    public String getBugId()
+    {
+        return bugId;
+    }
+    public void setBug(BugInfo bugg) 
+    {
+        this.bug = bugg;
     }
 }

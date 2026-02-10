@@ -39,18 +39,15 @@
     "eats": ["Aphids"]
   }
 },
-
-  "Ground Beetle": {
-  "id": "Ground Beetle",
-  "bug": {
-    "name": "Ground Beetle",
-    "classification": "Beneficial",
-    "description": "Ground Beetles smt.",
-    "images": [],
-    "affectsPlants": ["Flower", "Tomatoes"],
-    "eats": ["Bugs"]
-  }
-}
-
-  
+    "Ground Beetle": {
+    "id": "Ground Beetle",
+    "bug": {
+        "name": "Ground Beetle",
+        "classification": "Beneficial",
+        "description": "Ground Beetles smt.",
+        "images": ["images/ground-beetle.jpg"],
+        "affectsPlants": ["Flower", "Tomatoes"],
+        "eats": ["Bugs"]
+    }
+    }
 }

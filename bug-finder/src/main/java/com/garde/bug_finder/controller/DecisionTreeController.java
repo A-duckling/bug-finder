@@ -12,17 +12,20 @@ import java.util.Map;
 public class DecisionTreeController {
     private final DecisionTreeService service;
 
-    public DecisionTreeController(DecisionTreeService service) {
-        this.service = service;
+    public DecisionTreeController(DecisionTreeService services) 
+    {
+        this.service = services;
     }
 
     @GetMapping("/start")
-    public DecisionNode start() {
+    public DecisionNode start() 
+    {
         return service.getNode("start");
     }
 
     @PostMapping("/next")
-    public DecisionNode next(@RequestBody Map<String, String> payload) {
+    public DecisionNode next(@RequestBody Map<String, String> payload) 
+    {
         String nextId = payload.get("next");
         return service.getNode(nextId);
     }

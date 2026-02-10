@@ -1,6 +1,7 @@
 package com.garde.bug_finder.service;
 
 
+import com.garde.bug_finder.model.BugInfo;
 import com.garde.bug_finder.model.DecisionNode;
 import com.garde.bug_finder.util.TreeLoader;
 import org.springframework.stereotype.Service;
@@ -9,7 +10,8 @@ import java.util.Map;
 
 @Service
 public class DecisionTreeService {
-     private final Map<String, DecisionNode> tree;
+    private final Map<String, DecisionNode> tree;
+    private Map<String, BugInfo> bugDatabase;
 
     public DecisionTreeService() {
         this.tree = TreeLoader.loadTree();
