@@ -4,12 +4,18 @@
     "question": "What does the insect look most similar to?",
     "options": [
       { "answer": "Beetle", "next": "Beetle Question" },
-      { "answer": "Worms", "next": "Worm Question" },
-      { "answer": "Assassin Bug", "next": "Worm Question" },
-      { "answer": "Aphids", "next": "Worm Question" },
-      { "answer": "Slugs", "next": "Worm Question" }
-    ]
+      { "answer": "Worms", "next": "Worms Question" },
+      { "answer": "Assassin Bug", "next": "Assassin Bug Question" },
+      { "answer": "Aphids", "next": "Aphids Question" },
+      { "answer": "Slugs", "next": "Slugs Question" }
+    ],
+    "images": ["images/ground-beetle.jpg"]
   },
+
+
+
+
+
   "Beetle Question": {
     "id": "Beetle Question",
     "question": "Looks most similar to?",
@@ -18,8 +24,40 @@
       { "answer": "Ground Beetles/Other", "next": "Ground Beetle Question" }
     ]
   },
+    "Worms": {
+    "id": "Worms",
+    "question": "Looks most similar to?",
+    "options": [
+      {"answer": "Ground Beetle", "next": "Ground Beetle"}
+    ]
+  },
+    "Assassin Bug Question": {
+    "id": "Assassin Bug Question",
+    "question": "Looks most similar to?",
+    "options": [
+      {"answer": "Ground Beetle", "next": "Ground Beetle"}
+    ]
+  },
+      "Aphids Question": {
+    "id": "Aphids Question",
+    "question": "Looks most similar to?",
+    "options": [
+      {"answer": "Ground Beetle", "next": "Ground Beetle"}
+    ]
+  },
+      "Slugs Question": {
+    "id": "Slugs Question",
+    "question": "Looks most similar to?",
+    "options": [
+      {"answer": "Ground Beetle", "next": "Ground Beetle"}
+    ]
+  },
 
-  "Ground Beetle Question": {
+
+
+
+
+    "Ground Beetle Question": {
     "id": "Ground Beetle Question",
     "question": "Looks most similar to?",
     "options": [
@@ -28,6 +66,21 @@
       {"answer": "Cucumber Beetle", "next": "Cucumber Beetle"}
     ]
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "Ladybug": {
   "id": "Ladybug",
   "bug": {

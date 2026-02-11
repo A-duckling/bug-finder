@@ -7,6 +7,7 @@ fetch("/api/tree/start")
 function renderNode(node) {
   app.innerHTML = "";
 
+  //if its a bug instead of the questions nodes, meaning its done
   if (node.bug) {
   app.innerHTML = `
     <h2>${node.bug.name}</h2>
@@ -22,19 +23,26 @@ function renderNode(node) {
     </ul>
     <button onclick="location.reload()">Restart</button>
   `;
+if (node.bug.images) {
+  const imageContainer = document.createElement("div");
+  imageContainer.className = "image-container";
 
   node.bug.images.forEach(src => {
     const img = document.createElement("img");
     img.src = src;
-    img.style.width = "200px";
-    img.style.margin = "10px";
-    app.appendChild(img);
+    img.className = "bug-image";
+    imageContainer.appendChild(img);
   });
 
-  return;
+  app.appendChild(imageContainer);
 }
 
 
+  return;
+
+  }
+
+//else, if it isnt a bug, then its questions: shows question
   const question = document.createElement("h2");
   question.textContent = node.question;
   app.appendChild(question);
@@ -53,4 +61,20 @@ function renderNode(node) {
     };
     app.appendChild(btn);
   });
+
+  if (node.images) {
+  const imageContainer = document.createElement("div");
+  imageContainer.className = "image-container";
+
+  node.images.forEach(src => {
+    const img = document.createElement("img");
+    img.src = src;
+    img.className = "bug-image";
+    imageContainer.appendChild(img);
+  });
+
+  app.appendChild(imageContainer);
+}
+
+
 }

@@ -7,8 +7,8 @@ public class DecisionNode {
     private String id;
     private String question;
     private List<Option> options;
-
-    private String bugId;
+    
+    private List<String> images; 
     private BugInfo bug;
 
     public DecisionNode()
@@ -34,9 +34,8 @@ public class DecisionNode {
         return bug;
     }
 
-    public String getBugId()
-    {
-        return bugId;
+    public List<String> getImages() {
+        return images;
     }
     public void setBug(BugInfo bugg) 
     {

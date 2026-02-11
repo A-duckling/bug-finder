@@ -1,0 +1,23 @@
+[33mcommit 970cd0c6ba1c94da010f77dc275cb338c6ddf280[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: A-duckling <darrienwhat@gmail.com>
+Date:   Tue Feb 10 21:20:36 2026 -0500
+
+    failed, revert this
+
+[33mcommit a29937568430268d7f5c7d13c28e72ee17c091f8[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: A-duckling <darrienwhat@gmail.com>
+Date:   Tue Feb 10 16:27:11 2026 -0500
+
+    Second commit
+
+[33mcommit 6fb04f1f22b0204120099d9d781a7ea09c668853[m
+Author: A-duckling <darrienwhat@gmail.com>
+Date:   Thu Jan 29 16:53:53 2026 -0500
+
+    changed name
+
+[33mcommit 65677064d2609b818dc40621269aecc34f55fe74[m
+Author: A-duckling <darrienwhat@gmail.com>
+Date:   Thu Jan 29 16:37:21 2026 -0500
+
+    First commit
