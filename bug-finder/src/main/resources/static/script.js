@@ -13,11 +13,11 @@ function renderNode(node) {
     <h2>${node.bug.name}</h2>
     <p><strong>${node.bug.classification}</strong></p>
     <p>${node.bug.description}</p>
-    <h3>Eats</h3>
+    <p><strong>Impact</strong></p>
     <ul>
       ${node.bug.eats.map(item => `<li>${item}</li>`).join("")}
     </ul>
-    <h3>Affects Plants</h3>
+    <p><strong>Affects Plants</strong></p>
     <ul>
       ${node.bug.affectsPlants.map(item => `<li>${item}</li>`).join("")}
     </ul>
@@ -68,7 +68,7 @@ if (node.bug.images) {
 
   node.images.forEach(src => {
     const img = document.createElement("img");
-    img.src = src;
+    img.src = src;     
     img.className = "bug-image";
     imageContainer.appendChild(img);
   });

@@ -19,14 +19,14 @@ ul {
 
 .image-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 20px;
     flex-wrap: wrap;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .bug-image {
-    width: 200px;
+    width: 100px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }

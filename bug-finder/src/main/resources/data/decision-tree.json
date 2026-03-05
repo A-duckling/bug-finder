@@ -3,13 +3,13 @@
     "id": "start",
     "question": "What does the insect look most similar to?",
     "options": [
-      { "answer": "Beetle", "next": "Beetle Question" },
-      { "answer": "Worms", "next": "Worms Question" },
+      { "answer": "Beetle", "next": "Beetle Question",  "images": ["images/ground-beetle.jpg", "images/ground-beetle.jpg"]},
+      { "answer": "Worms", "next": "Worm Question" },
       { "answer": "Assassin Bug", "next": "Assassin Bug Question" },
       { "answer": "Aphids", "next": "Aphids Question" },
-      { "answer": "Slugs", "next": "Slugs Question" }
+      { "answer": "Slug/Snails", "next": "Slugs/Snails Question" }
     ],
-    "images": ["images/ground-beetle.jpg"]
+    "images": ["images/ground-beetle.jpg", "images/army 1.jpg", "images/assasin bug 1.jpg", "images/bean 1.jpg"]
   },
 
 
@@ -20,50 +20,79 @@
     "id": "Beetle Question",
     "question": "Looks most similar to?",
     "options": [
-      { "answer": "Ladybugs", "next": "Ladybug" },
+      { "answer": "Asian Lady Beetle", "next": "Asian Lady Beetle" },
       { "answer": "Ground Beetles/Other", "next": "Ground Beetle Question" }
     ]
   },
-    "Worms": {
-    "id": "Worms",
+    "Worm Question": {
+    "id": "Worm Question",
     "question": "Looks most similar to?",
     "options": [
-      {"answer": "Ground Beetle", "next": "Ground Beetle"}
-    ]
+      {"answer": "Open Feeders", "next": "Worm Open Feeders Question"},
+      {"answer": "Bagworms", "next": "Bagworm"},
+      {"answer": "Web Spinners", "next": "Worm Web Spinner Question"}
+    ],
+    "images": ["images/Bagworm-Image.jpg", "images/fall bug 2.jpg"]
   },
     "Assassin Bug Question": {
     "id": "Assassin Bug Question",
     "question": "Looks most similar to?",
     "options": [
-      {"answer": "Ground Beetle", "next": "Ground Beetle"}
+      {"answer": "North American Wheel Bug", "next": "North American Wheel Bug"},
+      {"answer": "Milkweed Assassin Bug", "next": "Milkweed Assassin Bug"}
     ]
   },
       "Aphids Question": {
     "id": "Aphids Question",
     "question": "Looks most similar to?",
     "options": [
-      {"answer": "Ground Beetle", "next": "Ground Beetle"}
+      {"answer": "Green Peach Aphid", "next": "Green Peach Aphid"},
+      {"answer": "Black Bean Aphid", "next": "Black Bean Aphid"},
+      {"answer": "Oleander Aphid", "next": "Oleander Aphid"}
     ]
   },
-      "Slugs Question": {
-    "id": "Slugs Question",
+      "Slugs/Snails Question": {
+    "id": "Slugs/Snails Question",
     "question": "Looks most similar to?",
     "options": [
-      {"answer": "Ground Beetle", "next": "Ground Beetle"}
+      {"answer": "Brown Garden Snail", "next": "Brown Garden Snail"},
+      {"answer": "Tropical Leatherleaf", "next": "Tropical Leatherleaf"},
+      {"answer": "Rosy Wolfsnail", "next": "Rosy Wolfsnail"}
     ]
   },
-
-
-
-
-
     "Ground Beetle Question": {
     "id": "Ground Beetle Question",
     "question": "Looks most similar to?",
     "options": [
       {"answer": "Ground Beetle", "next": "Ground Beetle"},
-      {"answer": "Japanese Beetle", "next": "Japanese Beetle"},
-      {"answer": "Cucumber Beetle", "next": "Cucumber Beetle"}
+      {"answer": "Varied Carpet Beetle", "next": "Varied Carpet Beetle"},
+      {"answer": "Black Carpet Beetle", "next": "Black Carpet Beetle"},
+      {"answer": "Cigarette Beetle", "next": "Cigarette Beetle"}
+    ]
+  },
+
+
+
+
+
+  "Worm Open Feeders Question": {
+    "id": "Worm Open Feeders Question",
+    "question": "Looks most similar to?",
+    "options": [
+      {"answer": "Oleander Caterpillars", "next": "Oleander Caterpillars"},
+      {"answer": "Azalea Caterpillar", "next": "Azalea Caterpillar"},
+      {"answer": "Fall Armyworm", "next": "Fall Armyworm"},
+      {"answer": "Tropical Sod Web Worm", "next": "Tropical Sod Web Worm"}
+    ]
+  },
+  "Worm Web Spinner Question": {
+    "id": "Worm Web Spinner Question",
+    "question": "Looks most similar to?",
+    "options": [
+      {"answer": "Fall Web Worm", "next": "Fall Web Worm"},
+      {"answer": "Grub Worms", "next": "Grub Worms"},
+      {"answer": "Eastern Tent", "next": "Eastern Tent Caterpillar"}
+      
     ]
   },
 
@@ -81,15 +110,126 @@
 
 
 
-  "Ladybug": {
-  "id": "Ladybug",
+  
+
+
+    "Bagworm": {
+    "id": "Bagworm",
+    "bug": {
+        "name": "Bagworm",
+        "classification": "Harmful",
+        "description": "3/4 to 1 inch, 6 legs, attennae, wings only when male and fully grown into moth. Thick, slate-gray or brown bodies that are tube-shaped and covered in fine hairs. Typically remain inside of silken “bags” that may just resemble a pile of leaves or twigs.",
+        "images": ["images/bagworm adult 1.jpg", "images/bagworm adult 2.jpg", "images/Bagworm-Image.jpg", "images/Evergreen-Bagworm.jpg", "images/Untitled design.jpg"],
+        "affectsPlants": ["Evergreens: Juniper, arborvitae, cedar, cypress, pine, spruce, and hemlock", "Deciduous Trees/Shrubs: Maple, oak, sycamore, willow, elm, birch, black locust, honeylocust, basswood, poplar, and persimmon", "Ornamentals: Azalea, boxwood, holly"],
+        "eats": ["Foliage, generally evergreens, leaving plants weak. Could cause plant death."]
+    }
+    },
+
+    "Oleander Caterpillars": {
+    "id": "Oleander Caterpillars",
+    "bug": {
+        "name": "Oleader Caterpillar",
+        "classification": "Harmful",
+        "description": "1 to 1.5 inches long, 6 legs, antennae and wings when fully grown. Bright orange, covered in black spots and black hairs. Generally lives in tropical climates.",
+        "images": ["images/Oleander_caterpillar.jpg", "images/Oleander Caterpillar 1.jpg"],
+        "affectsPlants": ["Oleander"],
+        "eats": ["Feeds on the leaves and stems of oleander plants, which contain very toxic chemicals to humans, which could lead to cardiac arrest. They can trigger allergic reactions if you come into contact with them. They will damage and kill ornamental plants in your garden over time."]
+    }
+    },
+
+
+    "Fall Web Worm": {
+    "id": "Fall Web Worm",
+    "bug": {
+        "name": "Fall Web Worm",
+        "classification": "Not too bad",
+        "description": "1 to 1.5 inches long, 6 legs, atennae, and have wings when fully grown. Green/yellow with small orange or red dots, and long tuffs of fuzz. Live in areas with warm or mild climate and high levels of food.",
+        "images": ["images/fall bug 1.jpg", "images/fall bug 2.jpg", "images/fall bug 3.jpg"],
+        "affectsPlants": ["mulberry", "maple", 
+      "crabapples", "birch", "chokecherry", "walnut", "willow"],
+        "eats": ["Feeds on foliage, and can damage plants, but not in any serious way. Its more cosmetic, since it happens late in summer. They are known for making large, distinctive webs. In the larval stage they feed in large groups."]
+    }
+    },
+
+
+    "Grub Worms": {
+    "id": "Grub Worms",
+    "bug": {
+        "name": "Grub Worms",
+        "classification": "Harmful",
+        "description": "1 to 1.5 inches long, 6 legs, no antennae, wings as adults. They are white, slightly translucent, c-shaped, and darker at their head. They are found underground in soil, in lawns, gardens, etc.",
+        "images": ["images/grub worms 1.jpg"],
+        "affectsPlants": ["Flower", "Tomatoes"],
+        "eats": ["They damage roots, leading to damage in turf grass, so check for brown spots in your lawn. Harmless to humans"]
+    }
+    },
+
+
+    "Eastern Tent Caterpillar": {
+    "id": "Eastern Tent Caterpillar",
+    "bug": {
+        "name": "Eastern Tent Caterpillar",
+        "classification": "Ok",
+        "description": "2 to 2.5 inches, 6 legs, wings when grown into moths, they have black bodies with red and yellow stripes, with fuzz on their sizes. They live in forests and woodlands.",
+        "images": ["images/eastern tent 1.jpg", "images/eastern tent 2.jpg", "images/eastern tent 3.jpg"],
+        "affectsPlants": [ "apple", "chokecherry", "crabapple", "plum" , "cherry"],
+        "eats": ["Not much of a threat to gardens, but can defoiliate trees, but generally don't affect tree health. They create silk tents, active during may and june"]
+    }
+    },
+
+    "Fall Armyworm": {
+    "id": "Fall Armyworm",
+    "bug": {
+        "name": "Fall Armyworm",
+        "classification": "Harmful",
+        "description": "1.5 inches long, 8 pairs of legs, claw like near the head, wings and attenae in moth form. They are green, brown, black, and a 'Y' mark on their head and three stripes of white on their back. Live in warm climate with lots of foliage, often in agricultural fields.",
+        "images": ["images/army 1.jpg", "images/army 2.jpg", "images/army 4.jpg"],
+        "affectsPlants": ["corn", "wheat",  "soybeans"],
+        "eats": ["harmful to crops, especially for farmers, and can happen in a short period of time."]
+    }
+    },
+
+    "Tropical Sod Web Worm": {
+    "id": "Tropical Sod Web Worm",
+    "bug": {
+        "name": "Tropical Sod Web Worm",
+        "classification": "Harmful",
+        "description": "3/4 to 1 inch long, 6 legs, no antennae, wings in moth form. Distinct segments and ridges, light brown and darker heads. They live in warm climates and high humidity, in lawns or places with turfgrass",
+        "images": ["images/sod 1.jpg", "images/sod 2.jpg"],
+        "affectsPlants": ["Turfgrass", "St. Augustinegrass"],
+        "eats": ["Destructive to grass, leading to brown patches."]
+    }
+    },
+
+
+    "Azalea Caterpillar": {
+    "id": "Azalea Caterpillar",
+    "bug": {
+        "name": "Azalea Caterpillar",
+        "classification": "Beneficial",
+        "description": "1.5 to 2 inches, 6 legs, wings in moth stage. They are covered in a thin amount of fine hairs. They are black with yellow stripes and red head. They live in areas with azaleas",
+        "images": ["images/azalea 1.jpg", "images/azalea 2.jpg", "images/azalea 3.jpg"],
+        "affectsPlants": ["Azalea bushes", "blueberries"],
+        "eats": ["Eat in large groups, damaging bushes and leave plants dead."]
+    }
+    },
+
+
+
+
+
+
+
+
+  "Asian Lady Beetle": {
+  "id": "Asian Lady Beetle",
   "bug": {
-    "name": "Ladybug",
+    "name": "Asian Lady Beetle",
     "classification": "Beneficial",
-    "description": "Ladybugs eat aphids and protect plants.",
-    "images": [],
-    "affectsPlants": ["Roses", "Tomatoes"],
-    "eats": ["Aphids"]
+    "description": "6 to 10 mm with 6 legs, antennae, and wings. Yellow to a dark reddish-orange color and has spots on the wing cover. They can be found in crops, attics and crevises",
+    "images": ["images/lady beetle.jpg", "images/lady beetle 2.jpg"],
+    "affectsPlants": ["aphids", "scale insects", "mealybugs", "mites"],
+    "eats": ["They can bite, however bites do not greatly injure humans. They eat crop pests, making them beneficial to a garden, up to 65 aphids a day. They can become issues in homes."]
   }
 },
     "Ground Beetle": {
@@ -97,10 +237,167 @@
     "bug": {
         "name": "Ground Beetle",
         "classification": "Beneficial",
-        "description": "Ground Beetles smt.",
-        "images": ["images/ground-beetle.jpg"],
-        "affectsPlants": ["Flower", "Tomatoes"],
-        "eats": ["Bugs"]
+        "description": "1.5 to 25 mm and has 6 legs, antennae, and wings. Dark black or brown, slightly flat and elongated. Often lives in soil, under rocks, logs and leaves.",
+        "images": ["images/ground-beetle.jpg", "images/ground beetle.jpg", "images/ground beetle 2.jpg"],
+        "affectsPlants": ["Slugs", "snails", "caterpillars", "aphids", "maggots"],
+        "eats": ["Is not dangerous to humans. These beetles eat tons of garden pests."]
+    }
+    },
+
+
+    "Varied Carpet Beetle": {
+    "id": "Varied Carpet Beetle",
+    "bug": {
+        "name": "Varied Carpet Beetle",
+        "classification": "Harmless",
+        "description": "2 to 3 mm with 6 legs, antennae and wings. They are oval and dark in the center, with a irregular pattern of white, brown and yellow scales. They live in dark, secluded areas, in nests, trees, and homes, specifically rugs, wall hangings, etc.",
+        "images": ["images/varied 1.jpg", "images/varied 2.jpg"],
+        "affectsPlants": ["crape myrtle", "spirea", "wild aster", "wool", "feathers", "hair", "dead insects"],
+        "eats": ["Harmless to gardens, only feeding on pollen and nectar. They are minor pollinators. They can be household pests however."]
+    }
+    },
+
+    "Black Carpet Beetle": {
+    "id": "Black Carpet Beetle",
+    "bug": {
+        "name": "Black Carpet Beetle",
+        "classification": "Harmless",
+        "description": "2.8 to 5 mm with 6 legs, antennae and wings. They are dark black or brown, even color, longer than they are wide. They live in soil, under rocks, logs or leaves.",
+        "images": ["images/carpet 1.jpg", "images/carpet 2.jpg"],
+        "affectsPlants": ["crape myrtle", "spiraea", "buckwheat", "daisies", "wild asters"],
+        "eats": ["Harmless to garden, feeding on pollen and nectar from flowers. They can be major pests in your home, damaging fabrics, food and laying eggs."]
+    }
+    },
+
+    "Cigarette Beetle": {
+    "id": "Cigarette Beetle",
+    "bug": {
+        "name": "Cigarette Beetle",
+        "classification": "Harmless",
+        "description": "2 to 3 mm with 6 legs, antennae and wings. They are small, oval shaped with shiny reddish brown scales. They live in warmer climates and do not live in the wild, mostly in human made environments, and specifically in warehouses with tobacco",
+        "images": ["images/tobacco 1.jpg", "images/tobacco 2.jpg"],
+        "affectsPlants": ["tobacco", "spices", "cereals", "flour", "dried fruits", "nuts", "seeds", "pet food"],
+        "eats": ["They do not have an impact on a garden, as they mostly exist in man made areas. They are major pests in homes, particularly for dried vegtables, tobacco, and books"]
+    }
+    },
+
+
+    "Template": {
+    "id": "Template",
+    "bug": {
+        "name": "Template",
+        "classification": "",
+        "description": "",
+        "images": ["images/tobacco 2.jpg"],
+        "affectsPlants": [],
+        "eats": [""]
+    }
+    },
+
+    "North American Wheel Bug": {
+    "id": "North American Wheel Bug",
+    "bug": {
+        "name": "North American Wheel Bug",
+        "classification": "Beneficial",
+        "description": "1.5 inches with long legs, antennae and wings. They are grey to brownish gray and have bright red abdomens. They live in gardens and woodlands, staying in leafy areas and hiding, in sunflowers, cotton, trees, fruits and groves.",
+        "images": ["images/wheel 1.jpg", "images/wheel 2.jpg"],
+        "affectsPlants": ["caterpillars, such as tent caterpillars", "beetles, such as the japanese beetle"],
+        "eats": ["Beneficial for garden, as it is a predator of common garden pests, however also preys on other beneficial species such as lady bugs. They will defend themselves if they feel threatened, and the bite of an assasin bug is painful, being worse than wasps and longer lasting. It has been documented as extremely painful and can have numbness for days."]
+    }
+    },
+
+    "Milkweed Assassin Bug": {
+    "id": "Milkweed Assassin Bug",
+    "bug": {
+        "name": "Milkweed Assassin Bug",
+        "classification": "Beneficial",
+        "description": "0.5 inches with long legs, antennae and wings. Bright red and jet black, and longer than wide. Generally live in gardens or woodlands on and around plants",
+        "images": ["images/milkweed 1.jpg", "images/milkweed 2.jpg"],
+        "affectsPlants": ["beetles", "flies", "tomato hornworms", "roaches" , "mosquitoes"],
+        "eats": ["Beneficial for garden, as it is a predator of common garden pests. They will defend themselves if they feel threatened, and the bite of an assasin bug is not pleasant, leading to a small itchy bump."]
+    }
+    },
+
+
+    "Green Peach Aphid": {
+    "id": "Green Peach Aphid",
+    "bug": {
+        "name": "Green Peach Aphid",
+        "classification": "Harmful",
+        "description": "2 mm long, with antennae, cornicles and some have wings. They are yellow green, pale green or pinkish and pear shaped. They live in the underside of leaves, going between fruit trees and herbaceous plants between winter and summer",
+        "images": ["images/greenfly 1.jpg", "images/greenfly 2.jpg", "images/greenfly 3.jpg", "images/greenfly 4.jpg"],
+        "affectsPlants": ["cabbage", "peach trees", "tobacco", "potatoes",  "peppers"],
+        "eats": ["They suck plant sap, causing yellowing, wilting, leaf curling, and stunted growth, destroying many crops. Also are a vector for plant disease. They do not bite humans"]
+    }
+    },
+
+
+    "Black Bean Aphid": {
+    "id": "Black Bean Aphid",
+    "bug": {
+        "name": "Black Bean Aphid",
+        "classification": "Harmful",
+        "description": "2 mm with antennae, cornicles, and some with wings. They are small, soft, and dark green or blackish and legs are pale yellow with black tips. They are found in the undersides of leaves, in various agricultural crops and ornamental plants",
+        "images": ["images/bean 1.jpg", "images/bean 2.jpg"],
+        "affectsPlants": ["Spindle Tree", "Mock-orange", "sugar beets", "spinach", "beans", "celery", "potatoes", "sunflowers", "carrots", "tobacco"],
+        "eats": ["They suck plant sap, causing yellowing, wilting, leaf curling, and stunted growth, destroying many crops. Also are a vector for plant disease. They do not bite humans"]
+    }
+    },
+
+
+    "Oleander Aphid": {
+    "id": "Oleander Aphid",
+    "bug": {
+        "name": "Oleander Aphid",
+        "classification": "Harmful",
+        "description": "1.5 to 2.6 mm long, with antennae, cornicles and some have wings. They have black and yellow bodies. They live in the underside of leaves, going between fruit trees and herbaceous plants between winter and summer",
+        "images": ["images/oleander 1.jpg", "images/oleander 2.jpg", "images/oleander 3.jpg", "images/oleander 4.jpg"],
+        "affectsPlants": ["oleander", "vinca", "butterfly weed", "scarlet milkweed", "wax plant"],
+        "eats": ["They suck plant sap, causing yellowing, wilting, leaf curling, and stunted growth, destroying many crops. Also are a vector for plant disease. They do not bite humans"]
+    }
+    },
+
+
+    "Brown Garden Snail": {
+    "id": "Brown Garden Snail",
+    "bug": {
+        "name": "Brown Garden Snail",
+        "classification": "Harmful",
+        "description": "1 inch, 2.5 cm, and is brown and grey. Found most active at night and when its damp, found in soil and around plants.",
+        "images": ["images/brown 1.jpg", "images/brown 2.jpg"],
+        "affectsPlants": ["lettuce", "cabbage", "tomatoes", "beans","hostas", "marigolds",  "citrus trees"],
+        "eats": ["Feeds on fruit and leaves, leaving circular chewed areas"]
+    }
+    },
+
+    "Tropical Leatherleaf": {
+    "id": "Tropical Leatherleaf",
+    "bug": {
+        "name": "Tropical Leatherleaf",
+        "classification": "Harmful",
+        "description": "slug, 7 or 8 cm, round, dark brown, no shell. Found most active at night and when its damp, found in soil and around plants.",
+        "images": ["images/tropical 1.jpg", "images/topical 2.jpg"],
+        "affectsPlants": ["vegetables", "fruits", "ornamentals", "young seedlings"],
+        "eats": ["Feeds on fruit and leaves, leaving circular chewed areas"]
+    }
+    },
+
+    "Rosy Wolfsnail": {
+    "id": "Rosy Wolfsnail",
+    "bug": {
+        "name": "Rosy Wolfsnail",
+        "classification": "Beneficial",
+        "description": "7-10 cm, and has a light grey or brown body. Found most active at night and when its damp, found in soil and around plants.",
+        "images": ["images/rosy 1.jpg", "images/rosy 2.jpg"],
+        "affectsPlants": ["Snails", "Slugs"],
+        "eats": ["They eat other snails and slugs, typically ones that are smaller than themselves"]
     }
     }
+
+    
+
+
+
+
+    
 }
