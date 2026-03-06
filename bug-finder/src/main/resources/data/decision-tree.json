@@ -9,7 +9,7 @@
       { "answer": "Aphids", "next": "Aphids Question" },
       { "answer": "Slug/Snails", "next": "Slugs/Snails Question" }
     ],
-    "images": ["images/ground-beetle.jpg", "images/army 1.jpg", "images/assasin bug 1.jpg", "images/bean 1.jpg"]
+    "images": ["images/ground beetle.jpg", "images/army 1.jpg", "images/assasin bug 1.jpg", "images/bean 1.jpg", "images/brown 2.jpg"]
   },
 
 
@@ -22,7 +22,8 @@
     "options": [
       { "answer": "Asian Lady Beetle", "next": "Asian Lady Beetle" },
       { "answer": "Ground Beetles/Other", "next": "Ground Beetle Question" }
-    ]
+    ],
+    "images": ["images/lady beetle.jpg", "images/ground-beetle.jpg"]
   },
     "Worm Question": {
     "id": "Worm Question",
@@ -32,7 +33,7 @@
       {"answer": "Bagworms", "next": "Bagworm"},
       {"answer": "Web Spinners", "next": "Worm Web Spinner Question"}
     ],
-    "images": ["images/Bagworm-Image.jpg", "images/fall bug 2.jpg"]
+    "images": ["images/azalea 1.jpg", "images/Bagworm-Image.jpg", "images/fall bug 2.jpg"]
   },
     "Assassin Bug Question": {
     "id": "Assassin Bug Question",
@@ -40,7 +41,8 @@
     "options": [
       {"answer": "North American Wheel Bug", "next": "North American Wheel Bug"},
       {"answer": "Milkweed Assassin Bug", "next": "Milkweed Assassin Bug"}
-    ]
+    ],
+    "images": ["images/wheel 1.jpg", "images/milkweed 1.jpg"]
   },
       "Aphids Question": {
     "id": "Aphids Question",
@@ -49,7 +51,8 @@
       {"answer": "Green Peach Aphid", "next": "Green Peach Aphid"},
       {"answer": "Black Bean Aphid", "next": "Black Bean Aphid"},
       {"answer": "Oleander Aphid", "next": "Oleander Aphid"}
-    ]
+    ],
+    "images": ["images/greenfly 1.jpg", "images/bean 1.jpg", "images/oleander 1.jpg"]
   },
       "Slugs/Snails Question": {
     "id": "Slugs/Snails Question",
@@ -58,7 +61,8 @@
       {"answer": "Brown Garden Snail", "next": "Brown Garden Snail"},
       {"answer": "Tropical Leatherleaf", "next": "Tropical Leatherleaf"},
       {"answer": "Rosy Wolfsnail", "next": "Rosy Wolfsnail"}
-    ]
+    ],
+    "images":["images/brown 1.jpg", "images/topical 2.jpg", "images/rosy 1.jpg"]
   },
     "Ground Beetle Question": {
     "id": "Ground Beetle Question",
@@ -68,7 +72,8 @@
       {"answer": "Varied Carpet Beetle", "next": "Varied Carpet Beetle"},
       {"answer": "Black Carpet Beetle", "next": "Black Carpet Beetle"},
       {"answer": "Cigarette Beetle", "next": "Cigarette Beetle"}
-    ]
+    ],
+    "images": ["images/ground beetle 2.jpg", "images/varied 1.jpg", "images/carpet 1.jpg", "images/tobacco 1.jpg"]
   },
 
 
@@ -83,7 +88,8 @@
       {"answer": "Azalea Caterpillar", "next": "Azalea Caterpillar"},
       {"answer": "Fall Armyworm", "next": "Fall Armyworm"},
       {"answer": "Tropical Sod Web Worm", "next": "Tropical Sod Web Worm"}
-    ]
+    ],
+    "images": ["images/Oleander Caterpillar 1.jpg", "images/azalea 1.jpg", "images/army 1.jpg", "images/sod 2.jpg"]
   },
   "Worm Web Spinner Question": {
     "id": "Worm Web Spinner Question",
@@ -93,7 +99,8 @@
       {"answer": "Grub Worms", "next": "Grub Worms"},
       {"answer": "Eastern Tent", "next": "Eastern Tent Caterpillar"}
       
-    ]
+    ],
+    "images": ["images/fall bug 1.jpg", "images/grub worms 1.jpg", "images/eastern tent 1.jpg"]
   },
 
 
